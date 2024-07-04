@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="8">C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <NoProgress>False</NoProgress>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Sample - Superstore (3).xls
+Query=`Orders$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row ID" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="Double" />
+            <Field name="Order ID" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="V_WString" />
+            <Field name="Order Date" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="DateTime" />
+            <Field name="Ship Date" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="DateTime" />
+            <Field name="Ship Mode" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="V_WString" />
+            <Field name="Customer ID" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="V_WString" />
+            <Field name="Customer Name" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="V_WString" />
+            <Field name="Segment" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="V_WString" />
+            <Field name="Country" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="V_WString" />
+            <Field name="City" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="V_WString" />
+            <Field name="State" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="V_WString" />
+            <Field name="Postal Code" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="Double" />
+            <Field name="Region" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="V_WString" />
+            <Field name="Product ID" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="V_WString" />
+            <Field name="Category" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="V_WString" />
+            <Field name="Sub-Category" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="V_WString" />
+            <Field name="Product Name" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="V_WString" />
+            <Field name="Sales" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="Double" />
+            <Field name="Quantity" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="Double" />
+            <Field name="Discount" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="Double" />
+            <Field name="Profit" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="222" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\AAKARS~1\AppData\Local\Temp\Engine_12344_dd1c4abeb1d2cf41bcd1c76a1c017a58_\Engine_12344_dcb18bd5b747bf4b9f1be2f86c480a43~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>1. Input &amp; Browse Block</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="0961afac-24e4-4844-b8bc-6f94ce9c89ba" />
+      <Telemetry>
+        <PreviousWorkflowId value="86a1c3d9-6ee9-4096-ac70-1d634f60e452" />
+        <OriginWorkflowId value="86a1c3d9-6ee9-4096-ac70-1d634f60e452" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

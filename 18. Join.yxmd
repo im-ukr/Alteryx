@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="8">C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <NoProgress>False</NoProgress>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Sample - Superstore (3).xls
+Query=`Orders$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row ID" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="Double" />
+            <Field name="Order ID" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="V_WString" />
+            <Field name="Order Date" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="DateTime" />
+            <Field name="Ship Date" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="DateTime" />
+            <Field name="Ship Mode" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="V_WString" />
+            <Field name="Customer ID" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="V_WString" />
+            <Field name="Customer Name" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="V_WString" />
+            <Field name="Segment" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="V_WString" />
+            <Field name="Country" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="V_WString" />
+            <Field name="City" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="V_WString" />
+            <Field name="State" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="V_WString" />
+            <Field name="Postal Code" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="Double" />
+            <Field name="Region" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="V_WString" />
+            <Field name="Product ID" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="V_WString" />
+            <Field name="Category" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="V_WString" />
+            <Field name="Sub-Category" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="V_WString" />
+            <Field name="Product Name" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="V_WString" />
+            <Field name="Sales" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="Double" />
+            <Field name="Quantity" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="Double" />
+            <Field name="Discount" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="Double" />
+            <Field name="Profit" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`Orders$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="114" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="8">C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`People$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <NoProgress>False</NoProgress>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Sample - Superstore (3).xls
+Query=`People$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Person" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`People$`" type="V_WString" />
+            <Field name="Region" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Sample - Superstore (3).xls|||`People$`" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="318" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Region" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Region" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Row ID" selected="True" input="Left_" />
+                <SelectField field="Left_Order ID" selected="True" input="Left_" />
+                <SelectField field="Left_Order Date" selected="True" input="Left_" />
+                <SelectField field="Left_Ship Date" selected="True" input="Left_" />
+                <SelectField field="Left_Ship Mode" selected="True" input="Left_" />
+                <SelectField field="Left_Customer ID" selected="True" input="Left_" />
+                <SelectField field="Left_Customer Name" selected="True" input="Left_" />
+                <SelectField field="Left_Segment" selected="True" input="Left_" />
+                <SelectField field="Left_Country" selected="True" input="Left_" />
+                <SelectField field="Left_City" selected="True" input="Left_" />
+                <SelectField field="Left_State" selected="True" input="Left_" />
+                <SelectField field="Left_Postal Code" selected="True" input="Left_" />
+                <SelectField field="Left_Product ID" selected="True" input="Left_" />
+                <SelectField field="Left_Category" selected="True" input="Left_" />
+                <SelectField field="Left_Sub-Category" selected="True" input="Left_" />
+                <SelectField field="Left_Product Name" selected="True" input="Left_" />
+                <SelectField field="Left_Sales" selected="True" input="Left_" />
+                <SelectField field="Left_Quantity" selected="True" input="Left_" />
+                <SelectField field="Left_Discount" selected="True" input="Left_" />
+                <SelectField field="Left_Profit" selected="True" input="Left_" />
+                <SelectField field="Left_Region" selected="True" input="Left_" />
+                <SelectField field="Right_Person" selected="True" input="Right_" />
+                <SelectField field="Right_Region" selected="False" rename="Right_Region" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Right" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>18. Join</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="4a988a39-7ba2-467d-90b5-fdca661bf304" />
+      <Telemetry>
+        <PreviousWorkflowId value="fa6e7123-00a2-4fc5-9e2e-d29b46c0164a" />
+        <OriginWorkflowId value="fa6e7123-00a2-4fc5-9e2e-d29b46c0164a" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

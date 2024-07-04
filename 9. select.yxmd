@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="150" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Aakarsh Roy\Downloads\Unclean Covid19-31Oct2020.xlsx|||`Covid19-31Oct2020$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Unclean Covid19-31Oct2020.xlsx
+Query=`Covid19-31Oct2020$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="State" size="255" source="File: C:\Users\Aakarsh Roy\Downloads\Unclean Covid19-31Oct2020.xlsx|||`Covid19-31Oct2020$`" type="V_String" />
+            <Field name="Confirmed" source="File: C:\Users\Aakarsh Roy\Downloads\Unclean Covid19-31Oct2020.xlsx|||`Covid19-31Oct2020$`" type="Double" />
+            <Field name="Active" source="File: C:\Users\Aakarsh Roy\Downloads\Unclean Covid19-31Oct2020.xlsx|||`Covid19-31Oct2020$`" type="Double" />
+            <Field name="Recovered" source="File: C:\Users\Aakarsh Roy\Downloads\Unclean Covid19-31Oct2020.xlsx|||`Covid19-31Oct2020$`" type="Double" />
+            <Field name="Deceased" source="File: C:\Users\Aakarsh Roy\Downloads\Unclean Covid19-31Oct2020.xlsx|||`Covid19-31Oct2020$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="306" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="State" selected="True" rename="State Names" description="name of affected states" />
+            <SelectField field="Confirmed" selected="True" rename="Confirmed Cases" />
+            <SelectField field="Active" selected="True" rename="Active Cases" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>9. select</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="41e0dc53-ea16-4c6d-9650-42b68d40bbd1" />
+      <Telemetry>
+        <PreviousWorkflowId value="08c3e322-9d75-46e5-ac90-ae588c50067b" />
+        <OriginWorkflowId value="08c3e322-9d75-46e5-ac90-ae588c50067b" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
